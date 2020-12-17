@@ -27,9 +27,9 @@ public:
 	BinarySearchTree();
 	~BinarySearchTree();
 
-	bool contains(int); // поиск элемента в дереве по ключу
-	void insert(int); // добавление элемента в дерево по ключу. Должен работать за O(logN)
-	void remove(int); // удаление элемента дерева по ключу
+	bool contains(int);
+	void insert(int);
+	void remove(int);
 
 
 	class Queue {
@@ -55,7 +55,7 @@ public:
 		Node* pop();
 		Node* front();
 	};
-	Iterator* create_bft_iterator(); // создание итератора, реализующего методы обхода в ширину (breadth-first traverse)
+	Iterator* create_bft_iterator();
 	
 	class bft_Iterator : public Iterator {
 	public:
@@ -91,7 +91,7 @@ public:
 		bool isEmpty();
 		Node* getTop();
 	};
-	Iterator* create_dft_iterator(); // создание итератора, реализующего один из методов обхода в глубину (depth-first traverse)
+	Iterator* create_dft_iterator(); 
 
 	class dft_Iterator: public Iterator{
 	public:
